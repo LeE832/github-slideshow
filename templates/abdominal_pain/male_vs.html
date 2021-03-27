@@ -1,0 +1,121 @@
+<html lang="en">
+<div class="bg"></div>
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <link rel="stylesheet" href="/static/dist/css/reset.css?ver=">
+        <!-- 세부수정 css -->
+    <link rel="stylesheet" href="/static/dist/css/app.css?ver=">
+    <link rel="stylesheet" href="/static/dist/css/age_select_btn.css"> 
+    <link rel="stylesheet" href="/static/dist/css/checked.css">     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+    
+    
+    <title>Doctor25ml_abdominal_pain_female</title>    
+    <style>
+     #test_btn1{ 
+      border-radius: 10px; 
+      } 
+     #test_btn2{ 
+      border-radius: 10px; 
+      }
+    #btn_group button{ border: 1px solid #04a5a6;
+     background-color: rgba(0,0,0,0); 
+     color: #04a5a6; 
+     padding: 5px; } 
+    </style>     
+  </head>
+  <script> 
+    window.history.forward(1); 
+  </script>
+  <body>
+   <div class="wrap">
+        <div class="po_rel padb83">
+          <header class="center">
+            <div id="headercon_box" class="h_5vh w_100 padt15  ">
+                <div class="logo w_50 in_block fl clear">
+                  <a href="/"><img src="/static/dist/image/ic-logo-text.png" alt="닥터25 로고"></a>
+                </div>
+                <div id ="btn_group">          
+                 <button id ="test_btn1" style=" margin: -5px 0px 0px 22px ; position:absolute;" onclick="location.href='/doctor25_abdominal_pain'" >처음 화면으로</button> 
+                 <button id ="test_btn2" style="margin: -5px 0px 0px 120px ; position:absolute;" >홈으로</button>
+                </div>
+            </div>
+          </header>
+<br>
+<br>
+<div class="center">
+    <form method="POST" action="/male_vs">
+      <br>
+      <center>
+       
+        <br>
+        <br>
+        <div>
+          <h2 class="font_b fs20 in_block  f-999 po_rel bottom3 marl17 point_t" style ="margin : 0px 0px 0px -2px;">나이를 입력하세요.</h2> 
+        </div>
+        <br>   
+        <br>
+          <div class="number-input">
+            <input type="button"  value="-"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()" >
+            <input type="number"  min="18" max="100" name="user_age" value="18"  pattern='\d*'/>
+            <input type="button" value="+" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+          </div>
+        <p>
+        <br>
+        <br>
+        <br>
+        <div>
+          <h2 class="font_b fs20 in_block  f-999 po_rel bottom3 marl17 point_t" style ="margin : 0px 0px 0px -2px;">맥박을 입력하세요.</h2> 
+        </div>
+        <br>
+        <br>
+          <div class="number-input">
+            <input type="button"  value="-"  onclick="this.parentNode.querySelector('input[type=number]').stepDown()" >
+            <input type="number"  min="30" max="200" name="hr" value="70" pattern='\d*'/>
+            <input type="button" value="+" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+          </div>  
+      </center>        
+        <p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+        <div>
+          <h2 class="font_b fs20 in_block  f-999 po_rel bottom3 marl17 point_t" style ="margin : 0px 0px 0px -2px;">체온을 입력하세요.</h2> 
+        </div>
+        </center>
+        <p>
+        <p>
+        <br>        
+        <br>
+        <div style = "position: relative; left:8%;">
+        <input type="checkbox" name=">=38" id=">=38" value=1 >
+        <label  class="fs12 f-555" for=">=38"><span style="color:#04a5a6;" >38'C 이상</span></label>        
+        <p>       
+        <br>
+        <p>
+        <input type="checkbox" name="37.5-38" id="37.5-38" value=1 >
+        <label  class="fs12 f-555" for="37.5-38"><span style="color:#04a5a6;">37.5'C-38'C</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="febrile sense" id="febrile sense" value=1 >
+        <label class="fs12 f-555" for="febrile sense"><span style="color:#04a5a6;" >체온은 모르지만 <br>열감이나 오한이 있음</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="none" id="none" value=1 >
+        <label  class="fs12 f-555" for="none"><span style="color:#04a5a6;">해당사항 없음</span></label>
+        </div>
+        <p>
+        <br>   
+        <center><p><h4><input type="submit" value="다음 페이지로" class="fs18 font_eb mart30 btn submit-btn" style= "font:12p; font-weight:bold;" onclick="this.disabled=true;this.value='전송중..';this.form.submit();"/></h4></P></center> 
+      <br>    
+    </form>  
+  <img src="/static/dist/image/whole_abdomen.png" style="width: 0px; height: 0px;"> 
+  <img src="/static/dist/image/suprapubic.png" style="width: 0px; height: 0px;">  
+  </body>
+</html>

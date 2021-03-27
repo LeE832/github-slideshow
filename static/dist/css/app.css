@@ -1,0 +1,135 @@
+/* Common css */
+
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Apple_Neo/AppleSDGothicNeoSB.ttf) format("woff2"),
+    url(../font/Apple_Neo/AppleSDGothicNeoSB.ttf) format("woff"),
+    url(../font/Apple_Neo/AppleSDGothicNeoSB.ttf) format("opentype");}
+
+.bg {
+  background: url(../image/img-main-bg.png);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  background: #04a5a6;
+  width: 50%;
+  height: auto;
+  padding: 15px 25px;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.submit-btn {
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.25);
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 18px;
+  margin: -4px 10px 0 50px;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  outline: none;
+}
+input[type="checkbox"]:hover{
+  background-color: #a5a5a5;
+}
+input[type="checkbox"]:checked{
+  background-color:#04a5a6;
+}
+input[type="checkbox"]:checked:after{
+  display: block;
+}
+input[type="radio"] {
+  display:none;
+}
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 18px;
+  margin: -4px 10px 0 50px;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align:middle;
+  outline: none;
+  }
+
+input[type="radio"]:hover{
+  background-color: #a5a5a5;
+}
+input[type="radio"]:checked{
+  background-color:#04a5a6;
+}
+input[type="radio"]:checked:after{
+  display: block;
+}
+
+/* 폰트 */
+.point_t {
+  color: #04a5a6;
+}
+
+.font_b {
+  font-weight: 500 !important;
+}
+.font_eb {
+  font-weight: 600;
+}
+
+/* 컬러관련 */
+.bg-key {
+  background: #04a5a6 !important;
+  color: #fff !important;
+}
+
+.color-key {
+  color: #04a5a6 !important;
+}
+
+/* 버튼 관련 */
+.btn-default {
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  padding: 9px 0;
+}
+
+/* icon 폰트어썸 사용 기본값'<i class="fas fa-''"></i>'*/
+
+/*   폰트어썸 스크립트 : <script src="https://kit.fontawesome.com/7ec989113a.js" crossorigin="anonymous"></script> */
+
+/* ================================================================================================================= */
+
+/* 사람아이콘 : <i class="fas fa-user"></i>*/
+
+/* 말풍선 : <i class="fas fa-comment-dots"></i>  */
+
+/* 집 : <i class="fas fa-home"></i> */
+
+/* 오른쪽 화살표_라이트 : <i class="fas fa-chevron-right"></i> */
+
+/* 별 : <i class="far fa-star"></i> */

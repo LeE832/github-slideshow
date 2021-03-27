@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<div class="bg"></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <link rel="stylesheet" href="/static/dist/css/reset.css?ver=">
+        <!-- 세부수정 css -->
+    <link rel="stylesheet" href="/static/dist/css/app.css?ver=">    
+  <title>abdominal_pain_result</title>
+  
+  </head>
+<script>    
+
+  window.onload = function(){
+    
+    var data = '{{ a | tojson | safe}}';
+
+    console.log(data);     
+
+    window.parent.postMessage(data, 'http://angie17.cafe24.com');
+
+  }
+</script>
+ 
+<body>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html lang="en">
+<div class="bg"></div>
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <link rel="stylesheet" href="/static/dist/css/reset.css?ver=">
+        <!-- 세부수정 css -->
+    <link rel="stylesheet" href="/static/dist/css/app.css?ver=">
+   <link rel="stylesheet" href="/static/dist/css/checked.css">     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+
+    <title>Doctor25ml_abdominal_pain_female</title>    
+     <style>
+     #test_btn1{ 
+      border-radius: 10px; 
+      } 
+     #test_btn2{ 
+      border-radius: 10px; 
+      }
+    #btn_group button{ border: 1px solid #04a5a6;
+     background-color: rgba(0,0,0,0); 
+     color: #04a5a6; 
+     padding: 5px; } 
+    </style>    
+  </head>
+  <script> 
+    window.history.forward(1); 
+  </script>
+  <body>
+   <div class="wrap">
+        <div class="po_rel padb83">
+          <header class="center">
+            <div id="headercon_box" class="h_5vh w_100 padt15  ">
+                <div class="logo w_50 in_block fl clear">
+                  <a href="/"><img src="/static/dist/image/ic-logo-text.png" alt="닥터25 로고"></a>
+                </div>
+                <div id ="btn_group">          
+                 <button id ="test_btn1" style=" margin: -5px 0px 0px 22px ; position:absolute;" onclick="location.href='/doctor25_abdominal_pain'" >처음 화면으로</button> 
+                 <button id ="test_btn2" style="margin: -5px 0px 0px 120px ; position:absolute;" >홈으로</button>
+                </div>
+            </div>
+          </header>
+<br>
+<br>
+<div class="center">
+    <form method="POST" action="/male_agg_factor">
+    <br>
+      <center>
+        <div>
+          <h2 class="font_b fs20 in_block  f-999 po_rel bottom3 marl17 point_t" style ="margin : 0px 0px 0px 0px;"><b>증상 유발 요인</b></h2>
+        </div>
+      </center>  
+        <p> 
+        <p>
+        <br>  
+        <br>      
+        <div style = "position: relative; left:8%;">   
+        <input type="checkbox" name="over eat" id="over eat" value=1>
+        <label class="fs12 f-555" for="over eat"><span style="color:#04a5a6;">과식</span></label>
+        <p>
+        <br>
+        <p>
+        <input type="checkbox" name="poisoned" id="poisoned" value=1>
+        <label class="fs12 f-555" for="poisoned"><span style="color:#04a5a6;">익히지 않은 음식, <br>오래된 음식</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="oily" id="oily" value=1>
+        <label class="fs12 f-555" for="oily"><span style="color:#04a5a6;">기름진 음식<br>(고기, 튀김 등)</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="irritant" id="irritant" value=1>
+        <label class="fs12 f-555" for="irritant"><span style="color:#04a5a6;">맵고 짜고<br>자극적인 음식</span></label>
+        <p>       
+        <br>    
+        <input type="checkbox" name="stress" id="stress" value=1>
+        <label class="fs12 f-555" for="stress"><span style="color:#04a5a6;">심리적인 스트레스</span></label>
+        <p>       
+        <br>   
+        <input type="checkbox" name="meal" id="meal" value=1>
+        <label class="fs12 f-555" for="meal"><span style="color:#04a5a6;">식사 후 악화</span></label>
+        <p>       
+        <br>   
+        <input type="checkbox" name="drinking" id="drinking" value=1>
+        <label class="fs12 f-555" for="drinking"><span style="color:#04a5a6;">음주 후 악화</span></label>
+        <p>       
+        <br>
+        <input type="checkbox" name="antibiotics" id="antibiotics" value=1>
+        <label class="fs12 f-555" for="antibiotics"><span style="color:#04a5a6;">항생제를<br>일주일 이상 복용</span></label>
+        </div>
+        <p>       
+        <br>        
+        <center><p><h4><input type="submit" value="다음 페이지로" class="fs18 font_eb mart30 btn submit-btn" onclick="this.disabled=true;this.value='전송중..';this.form.submit();"/></h4></P></center>
+        <br>   
+    </form>
+  </body>
+</html>

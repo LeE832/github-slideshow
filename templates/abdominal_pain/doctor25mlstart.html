@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<div class="bg"></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+    <link rel="stylesheet" href="/static/dist/css/reset.css">
+        <!-- 세부수정 css -->
+    <link rel="stylesheet" href="/static/dist/css/app.css">   
+    <title>doctor25ml_abdominal_pain_start</title> 
+    <style>
+     #test_btn1{ 
+      border-radius: 10px; 
+      } 
+     #test_btn2{ 
+      border-radius: 10px; 
+      }
+    #btn_group button{ border: 1px solid #04a5a6;
+     background-color: rgba(0,0,0,0); 
+     color: #04a5a6; 
+     padding: 5px; } 
+    </style>
+  </head>
+  <script> 
+    window.history.forward(1); 
+  </script>
+  <body>
+   <div class="wrap">
+        <div class="po_rel padb83">
+          <header class="center">          
+            <div id="headercon_box" class="h_5vh w_100 padt15  ">            
+                <div class="logo w_50 in_block fl clear">                
+                  <a href="/"><img src="/static/dist/image/ic-logo-text.png" alt="닥터25 로고"></a>                 
+                </div>  
+                <div id ="btn_group">          
+                  <button id ="test_btn2" style="margin: -5px 0px 0px 120px ; position:absolute;" >홈으로</button>
+                </div>
+            </div>
+          
+          </header>
+<br>
+<div class="center">
+<center><h1><p class="fs25 font_eb mart28" style = "color:#04a5a6;"> 성별을 선택하세요.</p></h1></center>
+</div>
+<br>
+<center>
+<div>
+<div class="container" >
+  <div class="card-deck mb-3 text-center" style="border:none;">   
+    <div class="card mb-4 shadow-none">            
+      <div class="card-body" >
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>&nbsp;</li>
+        </ul>      
+        <div id="male" class="w_48  h55 in_block align_center z102 po_rel right25 gender_btn active">
+        <img class="gender_img" src="/static/dist/image/ic-male-sel.svg" style=" width:75x; height:62px; margin : 5px 0 0 50px;"  alt="닥터25 건강정보 남성아이콘">
+        </div>
+          <li>&nbsp;</li>              
+        </ul>
+        <form action="/doctor25ml_abdominal_pain_male" method="post">    
+        <button type="submit" class="fs18 font_eb mart30 btn submit-btn" onclick="this.disabled=true;this.value='전송중..';this.form.submit();">남성</button>    
+        </form>
+        <br>
+        <br>        
+      </div>   
+    </div>  
+    <div class="card mb-4 shadow-none">      
+      <div class="card-body">
+       <ul class="list-unstyled mt-3 mb-4">
+          <li>&nbsp;</li>
+       </ul>
+        <div id="male" class="w_48  h55 in_block align_center z102 po_rel right25 gender_btn active">
+        <img class="gender_img" src="/static/dist/image/ic-female-sel.svg" style=" width:75x; height:62px; margin : 5px 0 0 50px ;" alt="닥터25 건강정보 남성아이콘">
+        </div>
+          <li>&nbsp;</li>
+          </ul>
+        <form action="/doctor25ml_abdominal_pain_female" method="post">
+         <button type="submit" class="fs18 font_eb mart30 btn submit-btn" onclick="this.disabled=true;this.value='전송중..';this.form.submit();">여성</button>  
+        </form>
+      </div>
+    </div>   
+  </div>
+</div>
+<center>
+</body>
+</html>

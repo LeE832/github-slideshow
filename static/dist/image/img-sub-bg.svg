@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="1364" viewBox="0 0 375 1364">
+    <defs>
+        <linearGradient id="315vcmtdca" x1="100%" x2="100%" y1="0%" y2="89.649%">
+            <stop offset="0%" stop-color="#F7FAF8"/>
+            <stop offset="100%" stop-color="#F2FAF8"/>
+        </linearGradient>
+        <filter id="ws8a8k2jib" width="174.7%" height="173.6%" x="-37.3%" y="-36.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H375V1364H0z"/>
+            <g>
+                <path fill="url(#315vcmtdca)" d="M0 0H375V1364H0z"/>
+                <path fill="#0DB0B0" d="M154.972 493c93.205 58.24 217.517 27.428 277.66-68.82 60.143-96.25 33.342-221.488-59.863-279.728-93.204-58.24-217.517-27.429-277.66 68.82C34.966 309.52 61.768 434.759 154.972 493z" filter="url(#ws8a8k2jib)" opacity=".05"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,105 @@
+<html lang="en">
+<div class="bg"></div>
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+    <link rel="stylesheet" href="/static/dist/css/reset.css?ver=">
+    <link rel="stylesheet" href="/static/dist/css/app.css?ver=">
+    <link rel="stylesheet" href="/static/dist/css/checked.css">     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+
+    <title>Doctor25ml_abdominal_pain_female</title>    
+     <style>
+     #test_btn1{ 
+      border-radius: 10px; 
+      } 
+     #test_btn2{ 
+      border-radius: 10px; 
+      }
+    #btn_group button{ border: 1px solid #04a5a6;
+     background-color: rgba(0,0,0,0); 
+     color: #04a5a6; 
+     padding: 5px; } 
+    </style>
+  </head>
+  <script> 
+    window.history.forward(1); 
+  </script>
+  <body>
+   <div class="wrap">
+        <div class="po_rel padb83">
+          <header class="center">
+            <div id="headercon_box" class="h_5vh w_100 padt15  ">
+                <div class="logo w_50 in_block fl clear">
+                  <a href="/"><img src="/static/dist/image/ic-logo-text.png" alt="닥터25 로고"></a>
+                </div>
+                <div id ="btn_group">          
+                 <button id ="test_btn1" style=" margin: -5px 0px 0px 22px ; position:absolute;" onclick="location.href='/doctor25_abdominal_pain'" >처음 화면으로</button> 
+                 <button id ="test_btn2" style="margin: -5px 0px 0px 120px ; position:absolute;" >홈으로</button>
+                </div>
+            </div>
+          </header>
+<br>
+<br>
+<div class="center">
+    <form method="POST" action="/male_asso_sx">
+    <br>
+      <center>
+         <div>
+          <h2 class="font_b fs20 in_block  f-999 po_rel bottom3 marl17 point_t" style ="margin : 0px 0px 0px 0px;"><b>동반증상</b></h2>
+          </div>
+      </center>
+        <p>
+        <p>
+        <br>
+        <br>
+        <div style = "position: relative; left:8%;">
+        <input type="checkbox" name="sweating" id="sweating" value=1 >
+        <label class="fs12 f-555" for="sweating"><span style="color:#04a5a6;">식은땀</span></label>
+        <p>
+        <br>
+        <p>
+        <input type="checkbox" name="dyspepsia" id="dyspepsia" value=1 >
+        <label class="fs12 f-555" for="dyspepsia"><span style="color:#04a5a6;">소화불량</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="anorexia" id="anorexia" value=1 >
+        <label class="fs12 f-555" for="anorexia"><span style="color:#04a5a6;">식욕부진</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="nausea" id="nausea" value=1 >
+        <label class="fs12 f-555" for="nausea"><span style="color:#04a5a6;">오심</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="vomiting" id="vomiting" value=1 >
+        <label class="fs12 f-555" for="vomiting"><span style="color:#04a5a6;">구토</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="loose stool" id="loose stool" value=1 >
+        <label class="fs12 f-555" for="loose stool"><span style="color:#04a5a6;">무른변</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="watery diarrhea" id="watery diarrhea" value=1 >
+        <label class="fs12 f-555" for="watery diarrhea"><span style="color:#04a5a6;">물설사</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="mucuous" id="mucuous" value=1>
+        <label class="fs12 f-555" for="mucuous"><span  style="color:#04a5a6;">콧물 같은 점액변</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="constipation" id="constipation" value=1>
+        <label class="fs12 f-555" for="constipation"><span style="color:#04a5a6;">변비</span></label>
+        <p>
+        <br>
+        <input type="checkbox" name="jaundice" id="jaundice" value=1>
+        <label class="fs12 f-555" for="jaundice"><span  style="color:#04a5a6;">황달</span></label>
+        </div>
+        <p>
+        <br>        
+        <center><p><h4><input type="submit" value="다음 페이지로"  class="fs18 font_eb mart30 btn submit-btn" onclick="this.disabled=true;this.value='전송중..';this.form.submit();"/></h4></P></center>  
+        <br>   
+    </form>
+  </body>
+</html>
